@@ -7,16 +7,20 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="../../assets/images/nhau-dem-home.jpg" alt="First slide">
+                        <img class="d-block w-100" src="../../assets/images/home/nhau-dem-home-1.jpg" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/images/vidic.jpg" alt="Second slide">
+                        <img class="d-block w-100" src="../../assets/images/home/nhau-dem-home.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/images/vidic.jpg" alt="Third slide">
+                        <img class="d-block w-100" src="../../assets/images/home/nhau-dem-home-2.jpg" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="../../assets/images/home/nhau-dem-home-5.jpg" alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -50,7 +54,7 @@
                         <div class="col-lg-4">
                             <div class="row">
                                 <div class="col-lg-3 icon-stadium"></div>
-                                <div class="col-lg-6">Sân Ngọc Bảo</div>
+                                <div class="col-lg-6" style="padding: 0">Sân Ngọc Bảo</div>
                             </div>
                         </div>
                         <div class="col-lg-4">
@@ -66,7 +70,7 @@
                         <div class="img-team-1"></div>
                     </div>
                     <div class="col-lg-6 img-team-padding">
-                        <div class="img-team-1"></div>
+                        <div class="img-team-2"></div>
                     </div>
                 </div>
             </div>
@@ -80,20 +84,20 @@
                             <li class="list-group-item">
                                 <div class="row">
                                     <div class="col-lg-4">
-                                        <span><font-awesome-icon :icon="['fas', 'clock']" :style="{color: '#000'}" class="icon alt"/> 29/03/2019 20:30</span>
+                                        <span><font-awesome-icon :icon="['fas', 'clock']" :style="{color: '#000'}" class="icon alt"/> 15/03/2019 20:30</span>
                                     </div>
                                     <div class="col-lg-5">
                                         <div class="row">
                                             <div class="col-lg-5">FC Nhậu Đêm</div>
-                                            <div class="col-lg-2">- : -</div>
-                                            <div class="col-lg-5">FC tiNiWorld VNCT</div>
+                                            <div class="col-lg-2">5-3</div>
+                                            <div class="col-lg-5">FC Loằng Ngoằng</div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="row">
                                             <div class="col-lg-2"></div>
                                             <div class="col-lg-2 icon-stadium-history"></div>
-                                            <div class="col-lg-8">Sân Ngọc Bảo</div>
+                                            <div class="col-lg-8">Sân Đầm Hồng 1</div>
                                         </div>
                                     </div>
                                 </div>
@@ -101,20 +105,20 @@
                             <li class="list-group-item">
                                 <div class="row">
                                     <div class="col-lg-4">
-                                        <span><font-awesome-icon :icon="['fas', 'clock']" :style="{color: '#000'}" class="icon alt"/> 29/03/2019 20:30</span>
+                                        <span><font-awesome-icon :icon="['fas', 'clock']" :style="{color: '#000'}" class="icon alt"/> 08/03/2019 20:30</span>
                                     </div>
                                     <div class="col-lg-5">
                                         <div class="row">
                                             <div class="col-lg-5">FC Nhậu Đêm</div>
-                                            <div class="col-lg-2">- : -</div>
-                                            <div class="col-lg-5">FC tiNiWorld VNCT</div>
+                                            <div class="col-lg-2">4-4</div>
+                                            <div class="col-lg-5">FC Đá Phò</div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="row">
                                             <div class="col-lg-2"></div>
                                             <div class="col-lg-2 icon-stadium-history"></div>
-                                            <div class="col-lg-8">Sân Ngọc Bảo</div>
+                                            <div class="col-lg-8">Sân Viettel 1</div>
                                         </div>
                                     </div>
                                 </div>
@@ -122,20 +126,20 @@
                             <li class="list-group-item">
                                 <div class="row">
                                     <div class="col-lg-4">
-                                        <span><font-awesome-icon :icon="['fas', 'clock']" :style="{color: '#000'}" class="icon alt"/> 29/03/2019 20:30</span>
+                                        <span><font-awesome-icon :icon="['fas', 'clock']" :style="{color: '#000'}" class="icon alt"/> 01/03/2019 20:30</span>
                                     </div>
                                     <div class="col-lg-5">
                                         <div class="row">
                                             <div class="col-lg-5">FC Nhậu Đêm</div>
-                                            <div class="col-lg-2">- : -</div>
-                                            <div class="col-lg-5">FC tiNiWorld VNCT</div>
+                                            <div class="col-lg-2">4-4</div>
+                                            <div class="col-lg-5">FC Sting</div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="row">
                                             <div class="col-lg-2"></div>
                                             <div class="col-lg-2 icon-stadium-history"></div>
-                                            <div class="col-lg-8">Sân Ngọc Bảo</div>
+                                            <div class="col-lg-8">Sân Đầm Hồng 2</div>
                                         </div>
                                     </div>
                                 </div>
@@ -143,20 +147,20 @@
                             <li class="list-group-item" style="margin-bottom: 0">
                                 <div class="row">
                                     <div class="col-lg-4">
-                                        <span><font-awesome-icon :icon="['fas', 'clock']" :style="{color: '#000'}" class="icon alt"/> 29/03/2019 20:30</span>
+                                        <span><font-awesome-icon :icon="['fas', 'clock']" :style="{color: '#000'}" class="icon alt"/> 21/02/2019 20:30</span>
                                     </div>
                                     <div class="col-lg-5">
                                         <div class="row">
                                             <div class="col-lg-5">FC Nhậu Đêm</div>
-                                            <div class="col-lg-2">- : -</div>
-                                            <div class="col-lg-5">FC tiNiWorld VNCT</div>
+                                            <div class="col-lg-2">5-5</div>
+                                            <div class="col-lg-5">FC Xứ Thanh</div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="row">
                                             <div class="col-lg-2"></div>
                                             <div class="col-lg-2 icon-stadium-history"></div>
-                                            <div class="col-lg-8">Sân Ngọc Bảo</div>
+                                            <div class="col-lg-8">Sân Huyền Anh</div>
                                         </div>
                                     </div>
                                 </div>

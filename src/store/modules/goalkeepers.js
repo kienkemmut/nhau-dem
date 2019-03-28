@@ -16,7 +16,10 @@ const state = {
       height: '68',
       item_number: '1',
       position: 'Thủ môn',
-      image: require('../../assets/images/degea.jpg')
+      image: require('../../assets/images/degea.jpg'),
+      image_s: require('../../assets/images/degea.jpg'),
+      image_sl: require('../../assets/images/degea.jpg'),
+      image_sli: require('../../assets/images/degea.jpg')
     }
   ],
   birthdayGoalKeepers: '',
@@ -27,7 +30,10 @@ const state = {
   heightGoalKeepers: '',
   itemNumberGoalKeepers: '',
   positionGoalKeepers: '',
-  imageGoalKeepers: ''
+  imageGoalKeepers: '',
+  image_s: '',
+  image_sl: '',
+  image_sli: '',
 }
 
 const getters = {
@@ -41,6 +47,9 @@ const getters = {
   itemNumberGoalKeepers: state => state.itemNumberGoalKeepers,
   positionGoalKeepers: state => state.positionGoalKeepers,
   imageGoalKeepers: state => state.imageGoalKeepers,
+  image_s: state => state.image_s,
+  image_sl: state => state.image_sl,
+  image_sli: state => state.image_sli,
 }
 
 const actions = {
