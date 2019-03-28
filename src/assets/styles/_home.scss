@@ -1,0 +1,203 @@
+
+.screen-home {
+  font-weight: bold;
+  padding: 2em 6em 3em 6em;
+  @include mobile {
+    padding: 1em .5em;
+  }
+  @include tablets {
+  }
+  @include tablets-pro {
+    padding: 1em 2.5em;
+  }
+  @include mobile-horizontal {
+  }
+  @include mobile-horizontal-lg {
+  }
+  @include tablets-horizontal {
+    padding: 1em 3em;
+  }
+  .images-team-home {
+    padding-top: 2em;
+    .img-team-1 {
+      width: 100%;
+      height: 50vh;
+      background-image: url("../images/team1.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      @include mobile {
+      }
+      @include tablets {
+      }
+      @include tablets-pro {
+        height: 30vh;
+      }
+      @include mobile-horizontal {
+      }
+      @include mobile-horizontal-lg {
+      }
+      @include tablets-horizontal {
+      }
+    }
+  }
+  .div-match {
+    -webkit-box-shadow: 0 4px 45px 0 rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 4px 45px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 4px 45px 0 rgba(0,0,0,0.5);
+    text-align: center;
+    @include mobile {
+      width: 100%;
+      margin: 0;
+    }
+    @include tablets {
+    }
+    @include tablets-pro {
+    }
+    @include mobile-horizontal {
+    }
+    @include mobile-horizontal-lg {
+    }
+    @include tablets-horizontal {
+    }
+    .last-match {
+      background-color: #444444;
+      color: #ffffff;
+      padding: 1em;
+      @include mobile {
+      }
+      @include tablets {
+      }
+      @include tablets-pro {
+        font-size: 12px;
+        padding: 2em 0 0 0;
+      }
+      @include mobile-horizontal {
+      }
+      @include mobile-horizontal-lg {
+      }
+      @include tablets-horizontal {
+        font-size: 12px;
+        padding: 2em 0 0 0;
+      }
+    }
+    .next-match {
+      color: #000;
+      background-color: #DFCE08;
+      padding: 1em 8em 0 8em;
+      @include mobile {
+        padding: 1em 3em;
+      }
+      @include tablets {
+      }
+      @include tablets-pro {
+        padding: 1em 2em;
+      }
+      @include mobile-horizontal {
+      }
+      @include mobile-horizontal-lg {
+      }
+      @include tablets-horizontal {
+        padding: 1em 2em;
+      }
+      .icon-stadium {
+        background-image: url("../images/icon-stadium.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 10%;
+        height: 4vh;
+        @include mobile {
+          display: none;
+        }
+        @include tablets {
+          display: none;
+        }
+        @include tablets-pro {
+        }
+        @include mobile-horizontal {
+        }
+        @include mobile-horizontal-lg {
+          display: none;
+        }
+        @include tablets-horizontal {
+        }
+      }
+    }
+  }
+  .div-history-match {
+    padding-top: 2em;
+    .border-bottom-title {
+      border-bottom: 1px solid #BFBFBF;
+      .title-history-match {
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+    .box-history-match {
+      padding: 2em 10em 0 10em ;
+      @include mobile {
+        padding: .5em 0 0 0;
+        text-align: center;
+      }
+      @include tablets {
+        padding: .5em 3em 0 3em;
+        text-align: center;
+      }
+      @include tablets-pro {
+        padding: .5em 0;
+      }
+      @include mobile-horizontal {
+      }
+      @include mobile-horizontal-lg {
+        padding: .5em 5em 0 5em;
+        text-align: center;
+      }
+      @include tablets-horizontal {
+        padding: .5em 0;
+      }
+      .history-card {
+        background-color: #EEEEEE !important;
+        @include mobile {
+          width: 100%;
+        }
+        @include tablets {
+        }
+        @include tablets-pro {
+        }
+        @include mobile-horizontal {
+        }
+        @include mobile-horizontal-lg {
+          width: 100%;
+        }
+        @include tablets-horizontal {
+        }
+        li {
+          margin-bottom: 5px;
+        }
+        .icon-stadium-history{
+          background-image: url("../images/icon-stadium-history.png");
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          width: 10%;
+          height: 4vh;
+          @include mobile {
+            display: none;
+          }
+          @include tablets {
+            display: none;
+          }
+          @include tablets-pro {
+          }
+          @include mobile-horizontal {
+
+          }
+          @include mobile-horizontal-lg {
+            display: none;
+          }
+          @include tablets-horizontal {
+          }
+        }
+      }
+    }
+  }
+}

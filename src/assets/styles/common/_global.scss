@@ -1,0 +1,11 @@
+#app {
+  font-size: 16px;
+  background-color: #EEEEEE;
+}
+
+.nav-sticky{
+  position: -webkit-sticky !important; /* Safari */
+  position: sticky !important;
+  top: 0;
+  z-index: 99;
+}

@@ -1,0 +1,100 @@
+
+.screen-team {
+  padding: 1em 6em 1em 6em;
+  @include mobile {
+    padding: 1em;
+  }
+  @include tablets {
+    padding: 2em 6em 1em 6em;
+  }
+  @include tablets-pro {
+    padding: 2em 1.5em 1em 1.5em;
+  }
+  @include mobile-horizontal {
+  }
+  @include mobile-horizontal-lg {
+  }
+  @include tablets-horizontal {
+    padding: 2em 1.5em 1em 1.5em;
+  }
+  .span-border {
+    border-bottom: 1px solid #C6C6C6;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 5px;
+    width: 100%;
+  }
+  .card-player img {
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s ease-in-out;
+  }
+  .card-player:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  .card-player {
+    position: relative;
+    overflow: hidden;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      box-shadow: inset 0 -120px 240px -10px rgba(0,0,0,1) !important;
+      -moz-box-shadow: inset 0 -10px 10px -10px rgba(0,0,0,.6);
+      -webkit-box-shadow: inset 0 -10px 10px -10px rgba(0,0,0,.6);
+    }
+    .card-img-overlay-custom {
+      padding: 14em 1em 0 1em !important;
+      @include mobile {
+        padding: 14em 1em 0 1em !important;
+      }
+      @include tablets {
+      }
+      @include tablets-pro {
+      }
+      @include mobile-horizontal {
+      }
+      @include mobile-horizontal-lg {
+      }
+      @include tablets-horizontal {
+      }
+      p {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 0 !important;
+      }
+      .card-title-custom {
+        border-bottom: 3px solid #FFE600;
+        font-weight: bold;
+        margin-bottom: 5px !important;
+        padding-bottom: 5px;
+        width: 2vw;
+        @include mobile {
+          width: 9vw;
+        }
+        @include tablets {
+          width: 4vw;
+        }
+        @include tablets-pro {
+          width: 3vw;
+        }
+        @include mobile-horizontal {
+        }
+        @include mobile-horizontal-lg {
+          width: 4vw;
+        }
+        @include tablets-horizontal {
+          width: 3vw;
+        }
+      }
+      .card-text {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
