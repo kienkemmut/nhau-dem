@@ -49,8 +49,12 @@
             </div>
             <div class="images-team-home">
                 <div class="row">
-                    <div class="col-lg-6 img-team-1"></div>
-                    <div class="col-lg-6 img-team-1"></div>
+                    <div class="col-lg-6 img-team-padding">
+                        <div class="img-team-1"></div>
+                    </div>
+                    <div class="col-lg-6 img-team-padding">
+                        <div class="img-team-1"></div>
+                    </div>
                 </div>
             </div>
             <div class="div-history-match">
