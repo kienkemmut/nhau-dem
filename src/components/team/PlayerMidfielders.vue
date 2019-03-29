@@ -18,13 +18,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="../../assets/images/vidic.jpg" alt="First slide">
+                        <img class="d-block w-100" :src="this.imageSlideMidfielders" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/images/vidic.jpg" alt="Second slide">
+                        <img class="d-block w-100" :src="this.imageSlide1Midfielders" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/images/vidic.jpg" alt="Third slide">
+                        <img class="d-block w-100" :src="this.imageSlide2Midfielders" alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -70,6 +70,10 @@
                             <tr>
                                 <th scope="row">vị trí</th>
                                 <td>{{ this.positionMidfielders }}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">biệt danh</th>
+                                <td>{{ this.nickNameMidfielders }}</td>
                             </tr>
                             </tbody>
                         </table>
@@ -136,6 +140,26 @@
           return this.$store.getters.imageMidfielders
         }
       },
+      imageSlideMidfielders: {
+        get: function () {
+          return this.$store.getters.imageSlideMidfielders
+        }
+      },
+      imageSlide1Midfielders: {
+        get: function () {
+          return this.$store.getters.imageSlide1Midfielders
+        }
+      },
+      imageSlide2Midfielders: {
+        get: function () {
+          return this.$store.getters.imageSlide2Midfielders
+        }
+      },
+      nickNameMidfielders: {
+        get: function () {
+          return this.$store.getters.nickNameMidfielders
+        }
+      }
     },
     created: function () {
       for (let i = 0; i < this.dataMidfielders.length; i++) {
@@ -152,6 +176,10 @@
           let itemNumberMidfielder = dataM.item_number
           let positionMidfielder = dataM.position
           let imageMidfielder = dataM.image
+          let imageSlideMidfielder = dataM.image_slide
+          let imageSlide1Midfielder = dataM.image_slide_1
+          let imageSlide2Midfielder = dataM.image_slide_2
+          let nickNameMidfielder = dataM.nick_name
 
           this.$store.dispatch('setBirthdayMidfielders', birthdayMidfielder)
           this.$store.dispatch('setCountryMidfielders', countryMidfielder)
@@ -162,6 +190,10 @@
           this.$store.dispatch('setItemNumberMidfielders', itemNumberMidfielder)
           this.$store.dispatch('setPositionMidfielders', positionMidfielder)
           this.$store.dispatch('setImageMidfielders', imageMidfielder)
+          this.$store.dispatch('setImageSlideMidfielders', imageSlideMidfielder)
+          this.$store.dispatch('setImageSlide1Midfielders', imageSlide1Midfielder)
+          this.$store.dispatch('setImageSlide2Midfielders', imageSlide2Midfielder)
+          this.$store.dispatch('setNickNameMidfielders', nickNameMidfielder)
 
           console.log('11')
         }

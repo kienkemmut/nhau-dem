@@ -18,13 +18,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="../../assets/images/vidic.jpg" alt="First slide">
+                        <img class="d-block w-100" :src="this.imageSlideDefenders" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/images/vidic.jpg" alt="Second slide">
+                        <img class="d-block w-100" :src="this.imageSlide1Defenders" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/images/vidic.jpg" alt="Third slide">
+                        <img class="d-block w-100" :src="this.imageSlide2Defenders" alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -70,6 +70,10 @@
                             <tr>
                                 <th scope="row">vị trí</th>
                                 <td>{{ this.positionDefenders }}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">biệt danh</th>
+                                <td>{{ this.nickNameDefenders }}</td>
                             </tr>
                             </tbody>
                         </table>
@@ -136,6 +140,26 @@
           return this.$store.getters.imageDefenders
         }
       },
+      imageSlideDefenders: {
+        get: function () {
+          return this.$store.getters.imageSlideDefenders
+        }
+      },
+      imageSlide1Defenders: {
+        get: function () {
+          return this.$store.getters.imageSlide1Defenders
+        }
+      },
+      imageSlide2Defenders: {
+        get: function () {
+          return this.$store.getters.imageSlide2Defenders
+        }
+      },
+      nickNameDefenders: {
+        get: function () {
+          return this.$store.getters.nickNameDefenders
+        }
+      }
     },
     created: function () {
       for (let i = 0; i < this.dataDefenders.length; i++) {
@@ -152,6 +176,10 @@
           let itemNumberDefender = dataD.item_number
           let positionDefender = dataD.position
           let imageDefender = dataD.image
+          let imageSlideDefender = dataD.image_slide
+          let imageSlide1Defender = dataD.image_slide_1
+          let imageSlide2Defender = dataD.image_slide_2
+          let nickNameDefender = dataD.nick_name
 
           this.$store.dispatch('setBirthdayDefenders', birthdayDefender)
           this.$store.dispatch('setCountryDefenders', countryDefender)
@@ -162,6 +190,10 @@
           this.$store.dispatch('setItemNumberDefenders', itemNumberDefender)
           this.$store.dispatch('setPositionDefenders', positionDefender)
           this.$store.dispatch('setImageDefenders', imageDefender)
+          this.$store.dispatch('setImageSlideDefenders', imageSlideDefender)
+          this.$store.dispatch('setImageSlide1Defenders', imageSlide1Defender)
+          this.$store.dispatch('setImageSlide2Defenders', imageSlide2Defender)
+          this.$store.dispatch('setNickNameDefenders', nickNameDefender)
 
         }
       }

@@ -16,11 +16,15 @@ const state = {
       height: '60',
       item_number: '14',
       position: 'Tiền đạo',
-      image: require('../../assets/images/Rooney.jpg')
+      image: require('../../assets/images/avt_hao.jpg'),
+      image_slide: require('../../assets/images/1_hao.jpg'),
+      image_slide_1: require('../../assets/images/2_hao.jpg'),
+      image_slide_2: require('../../assets/images/3_hao.jpg'),
+      nick_name: 'Hào Chuột'
     },
     {
       id: 2,
-      birthday: '1995',
+      birthday: '07/06/1995',
       country: 'Thị trấn Đình Lập',
       last_name: 'Hà Đình',
       first_name: 'Văn',
@@ -28,11 +32,15 @@ const state = {
       height: '72',
       item_number: '12',
       position: 'Tiền đạo',
-      image: require('../../assets/images/Rooney.jpg')
+      image: require('../../assets/images/avt_van.jpg'),
+      image_slide: require('../../assets/images/1_van.jpg'),
+      image_slide_1: require('../../assets/images/2_van.jpg'),
+      image_slide_2: require('../../assets/images/3_van.jpg'),
+      nick_name: 'Văn Chó'
     },
     {
       id: 3,
-      birthday: '1994',
+      birthday: '03/06/1994',
       country: 'Thành phố Quảng Ninh',
       last_name: 'Trần',
       first_name: 'Long',
@@ -40,7 +48,11 @@ const state = {
       height: '75',
       item_number: '9',
       position: 'Tiền đạo',
-      image: require('../../assets/images/Rooney.jpg')
+      image: require('../../assets/images/avt_long.jpg'),
+      image_slide: require('../../assets/images/1_long.jpg'),
+      image_slide_1: require('../../assets/images/2_long.jpg'),
+      image_slide_2: require('../../assets/images/3_long.jpg'),
+      nick_name: ''
     },
     {
       id: 4,
@@ -52,7 +64,11 @@ const state = {
       height: '65',
       item_number: '28',
       position: 'Tiền đạo',
-      image: require('../../assets/images/Rooney.jpg')
+      image: require('../../assets/images/avt_ha.jpg'),
+      image_slide: require('../../assets/images/avt_ha.jpg'),
+      image_slide_1: '',
+      image_slide_2: '',
+      nick_name: ''
     },
     {
       id: 5,
@@ -64,7 +80,11 @@ const state = {
       height: '54',
       item_number: '22',
       position: 'Tiền đạo',
-      image: require('../../assets/images/Rooney.jpg')
+      image: require('../../assets/images/avt_chuyen.jpg'),
+      image_slide: require('../../assets/images/1_chuyen.jpg'),
+      image_slide_1: require('../../assets/images/2_chuyen.jpg'),
+      image_slide_2: require('../../assets/images/3_chuyen.jpg'),
+      nick_name: 'Chuyên Hoy'
     }
   ],
   birthdayForwards: '',
@@ -75,7 +95,11 @@ const state = {
   heightForwards: '',
   itemNumberForwards: '',
   positionForwards: '',
-  imageForwards: ''
+  imageForwards: '',
+  imageSlideForwards: '',
+  imageSlide1Forwards: '',
+  imageSlide2Forwards: '',
+  nickNameForwards: ''
 }
 
 const getters = {
@@ -89,6 +113,10 @@ const getters = {
   itemNumberForwards: state => state.itemNumberForwards,
   positionForwards: state => state.positionForwards,
   imageForwards: state => state.imageForwards,
+  imageSlideForwards: state => state.imageSlideForwards,
+  imageSlide1Forwards: state => state.imageSlide1Forwards,
+  imageSlide2Forwards: state => state.imageSlide2Forwards,
+  nickNameForwards: state => state.nickNameForwards,
 }
 
 const actions = {
@@ -118,6 +146,18 @@ const actions = {
   },
   setImageForwards ({ commit }, name) {
     commit(types.IMAGE_FORWARDS, name)
+  },
+  setImageSlideForwards ({ commit }, name) {
+    commit(types.SET_IMAGE_SLIDE_FORWARDS, name)
+  },
+  setImageSlide1Forwards ({ commit }, name) {
+    commit(types.SET_IMAGE_SLIDE_1_FORWARDS, name)
+  },
+  setImageSlide2Forwards ({ commit }, name) {
+    commit(types.SET_IMAGE_SLIDE_2_FORWARDS, name)
+  },
+  setNickNameForwards ({ commit }, name) {
+    commit(types.SET_NICK_NAME_FORWARDS, name)
   },
 }
 
@@ -149,6 +189,18 @@ const mutations = {
   [types.IMAGE_FORWARDS] (state, name) {
     state.imageForwards = name
   },
+  [types.SET_IMAGE_SLIDE_FORWARDS] (state, name) {
+    state.imageSlideForwards = name
+  },
+  [types.SET_IMAGE_SLIDE_1_FORWARDS] (state, name) {
+    state.imageSlide1Forwards = name
+  },
+  [types.SET_IMAGE_SLIDE_2_FORWARDS] (state, name) {
+    state.imageSlide2Forwards = name
+  },
+  [types.SET_NICK_NAME_FORWARDS] (state, name) {
+    state.nickNameForwards = name
+  }
 }
 
 export default {

@@ -18,13 +18,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="../../assets/images/vidic.jpg" alt="First slide">
+                        <img class="d-block w-100" :src="this.imageSlideGoalKeepers" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/images/vidic.jpg" alt="Second slide">
+                        <img class="d-block w-100" :src="this.imageSlide1GoalKeepers" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/images/vidic.jpg" alt="Third slide">
+                        <img class="d-block w-100" :src="this.imageSlide2GoalKeepers" alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -69,7 +69,11 @@
                             </tr>
                             <tr>
                                 <th scope="row">vị trí</th>
-                                <td>{{ positionGoalKeepers }}</td>
+                                <td>{{ this.positionGoalKeepers }}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Biệt danh</th>
+                                <td>{{ this.nickNameGoalKeepers }}</td>
                             </tr>
                             </tbody>
                         </table>
@@ -83,6 +87,7 @@
   export default {
     data: function () {
       return {
+        imgTest: require('../../assets/images/stadium-history.png')
       }
     },
     computed: {
@@ -136,6 +141,26 @@
           return this.$store.getters.imageGoalKeepers
         }
       },
+      imageSlideGoalKeepers: {
+        get: function () {
+          return this.$store.getters.imageSlideGoalKeepers
+        }
+      },
+      imageSlide1GoalKeepers: {
+        get: function () {
+          return this.$store.getters.imageSlide1GoalKeepers
+        }
+      },
+      imageSlide2GoalKeepers: {
+        get: function () {
+          return this.$store.getters.imageSlide2GoalKeepers
+        }
+      },
+      nickNameGoalKeepers: {
+        get: function () {
+          return this.$store.getters.nickNameGoalKeepers
+        }
+      }
     },
     created: function () {
       for (let i = 0; i < this.dataGoalKeepers.length; i++) {
@@ -152,6 +177,10 @@
           let itemNumberGoalKeeper = dataG.item_number
           let positionGoalKeeper = dataG.position
           let imageGoalKeeper = dataG.image
+          let imageSlideGoalKeeper = dataG.image_slide
+          let imageSlide1GoalKeeper = dataG.image_slide_1
+          let imageSlide2GoalKeeper = dataG.image_slide_2
+          let nickNameGoalKeeper = dataG.nick_name
 
           this.$store.dispatch('setBirthdayGoalKeepers', birthdayGoalKeeper)
           this.$store.dispatch('setCountryGoalKeepers', countryGoalKeeper)
@@ -162,7 +191,10 @@
           this.$store.dispatch('setItemNumberGoalKeepers', itemNumberGoalKeeper)
           this.$store.dispatch('setPositionGoalKeepers', positionGoalKeeper)
           this.$store.dispatch('setImageGoalKeepers', imageGoalKeeper)
-
+          this.$store.dispatch('setImageSlideGoalKeepers', imageSlideGoalKeeper)
+          this.$store.dispatch('setImageSlide1GoalKeepers', imageSlide1GoalKeeper)
+          this.$store.dispatch('setImageSlide2GoalKeepers', imageSlide2GoalKeeper)
+          this.$store.dispatch('setNickNameGoalKeepers', nickNameGoalKeeper)
         }
       }
     },

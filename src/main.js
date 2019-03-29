@@ -16,6 +16,8 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faComment } from '@fortawesome/free-regular-svg-icons'
 import { faUser, faPhone, faEnvelope, faDownload, faClock } from '@fortawesome/free-solid-svg-icons'
 import VueCarousel from 'vue-carousel'
+import BackToTop from 'vue-backtotop'
+
 var VueScrollTo = require('vue-scrollto')
 library.add(faComment, faUser, faPhone, faEnvelope, faDownload, faClock)
 
@@ -27,6 +29,7 @@ Vue.use(VueRouterMultiView)
 Vue.use(BootstrapVue)
 Vue.use(VueScrollTo)
 Vue.use(VueCarousel)
+Vue.use(BackToTop)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

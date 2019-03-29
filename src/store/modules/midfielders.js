@@ -16,11 +16,15 @@ const state = {
       height: '65',
       item_number: '15',
       position: 'Tiền vệ',
-      image: require('../../assets/images/pogba.png')
+      image: require('../../assets/images/avt_manh.jpg'),
+      image_slide: require('../../assets/images/1_manh.jpg'),
+      image_slide_1: require('../../assets/images/2_manh.jpg'),
+      image_slide_2: require('../../assets/images/3_manh.jpg'),
+      nick_name: 'Mạnh Chít'
     },
     {
       id: 2,
-      birthday: '1995',
+      birthday: '19/06/1995',
       country: 'Thị trấn Kim Bôi',
       last_name: 'Đỗ Thành',
       first_name: 'Chung',
@@ -28,11 +32,15 @@ const state = {
       height: '65',
       item_number: '24',
       position: 'Tiền vệ',
-      image: require('../../assets/images/pogba.png')
+      image: require('../../assets/images/avt_chung.jpg'),
+      image_slide: require('../../assets/images/1_chung.jpg'),
+      image_slide_1: require('../../assets/images/2_chung.jpg'),
+      image_slide_2: require('../../assets/images/3_chung.jpg'),
+      nick_name: 'Chung chim'
     },
     {
       id: 3,
-      birthday: '1996',
+      birthday: '29/07/1996',
       country: 'Thị trấn Thất Khê',
       last_name: 'Hứa Minh',
       first_name: 'Hưởng',
@@ -40,11 +48,15 @@ const state = {
       height: '68',
       item_number: '8',
       position: 'Tiền vệ',
-      image: require('../../assets/images/pogba.png')
+      image: require('../../assets/images/avt_ti.jpg'),
+      image_slide: require('../../assets/images/1_ti.jpg'),
+      image_slide_1: require('../../assets/images/2_ti.jpg'),
+      image_slide_2: require('../../assets/images/3_ti.jpg'),
+      nick_name: 'Tý Iêu'
     },
     {
       id: 4,
-      birthday: '1996',
+      birthday: '27/09/1996',
       country: 'Thị trấn Thất Khê',
       last_name: 'Lê Huy',
       first_name: 'Quang',
@@ -52,7 +64,11 @@ const state = {
       height: '64',
       item_number: '21',
       position: 'Tiền vệ',
-      image: require('../../assets/images/pogba.png')
+      image: require('../../assets/images/avt_quang.jpg'),
+      image_slide: require('../../assets/images/1_quang.jpg'),
+      image_slide_1: require('../../assets/images/2_quang.jpg'),
+      image_slide_2: require('../../assets/images/3_quang.jpg'),
+      nick_name: 'Quang Lợn'
     }
   ],
   birthdayMidfielders: '',
@@ -63,7 +79,11 @@ const state = {
   heightMidfielders: '',
   itemNumberMidfielders: '',
   positionMidfielders: '',
-  imageMidfielders: ''
+  imageMidfielders: '',
+  imageSlideMidfielders: '',
+  imageSlide1Midfielders: '',
+  imageSlide2Midfielders: '',
+  nickNameMidfielders: ''
 }
 
 const getters = {
@@ -77,6 +97,10 @@ const getters = {
   itemNumberMidfielders: state => state.itemNumberMidfielders,
   positionMidfielders: state => state.positionMidfielders,
   imageMidfielders: state => state.imageMidfielders,
+  imageSlideMidfielders: state => state.imageSlideMidfielders,
+  imageSlide1Midfielders: state => state.imageSlide1Midfielders,
+  imageSlide2Midfielders: state => state.imageSlide2Midfielders,
+  nickNameMidfielders: state => state.nickNameMidfielders
 }
 
 const actions = {
@@ -107,6 +131,18 @@ const actions = {
   setImageMidfielders ({ commit }, name) {
     commit(types.IMAGE_MIDFIELDERS, name)
   },
+  setImageSlideMidfielders ({ commit }, name) {
+    commit(types.SET_IMAGE_SLIDE_MIDFIELDERS, name)
+  },
+  setImageSlide1Midfielders ({ commit }, name) {
+    commit(types.SET_IMAGE_SLIDE_1_MIDFIELDERS, name)
+  },
+  setImageSlide2Midfielders ({ commit }, name) {
+    commit(types.SET_IMAGE_SLIDE_2_MIDFIELDERS, name)
+  },
+  setNickNameMidfielders ({ commit }, name) {
+    commit(types.SET_NICK_NAME_MIDFIELDERS, name)
+  }
 }
 
 const mutations = {
@@ -137,6 +173,18 @@ const mutations = {
   [types.IMAGE_MIDFIELDERS] (state, name) {
     state.imageMidfielders = name
   },
+  [types.SET_IMAGE_SLIDE_MIDFIELDERS] (state, name) {
+    state.imageSlideMidfielders = name
+  },
+  [types.SET_IMAGE_SLIDE_1_MIDFIELDERS] (state, name) {
+    state.imageSlide1Midfielders = name
+  },
+  [types.SET_IMAGE_SLIDE_2_MIDFIELDERS] (state, name) {
+    state.imageSlide2Midfielders = name
+  },
+  [types.SET_NICK_NAME_MIDFIELDERS] (state, name) {
+    state.nickNameMidfielders = name
+  }
 }
 
 export default {

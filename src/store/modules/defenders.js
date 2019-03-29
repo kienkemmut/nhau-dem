@@ -16,11 +16,15 @@ const state = {
       height: '60',
       item_number: '10',
       position: 'Hậu vệ',
-      image: require('../../assets/images/vidic.jpg')
+      image: require('../../assets/images/avt_kien.jpg'),
+      image_slide: require('../../assets/images/1_kien.jpg'),
+      image_slide_1: require('../../assets/images/2_kien.jpg'),
+      image_slide_2: require('../../assets/images/3_kien.jpg'),
+      nick_name: 'Kiên Kem Mút'
     },
     {
       id: 2,
-      birthday: '1995',
+      birthday: '24/01/1995',
       country: 'Thị trấn Thanh Sơn',
       last_name: 'Nguyễn Duy',
       first_name: 'Khánh',
@@ -28,7 +32,11 @@ const state = {
       height: '65',
       item_number: '19',
       position: 'Hậu vệ',
-      image: require('../../assets/images/vidic.jpg')
+      image: require('../../assets/images/avt_khanh.jpg'),
+      image_slide: require('../../assets/images/1_khanh.jpg'),
+      image_slide_1: require('../../assets/images/2_khanh.jpg'),
+      image_slide_2: require('../../assets/images/3_khanh.jpg'),
+      nick_name: 'Khánh bẩn'
     },
     {
       id: 3,
@@ -40,7 +48,11 @@ const state = {
       height: '70',
       item_number: '23',
       position: 'Hậu vệ',
-      image: require('../../assets/images/vidic.jpg')
+      image: require('../../assets/images/avt_trung.jpg'),
+      image_slide: require('../../assets/images/1_trung.jpg'),
+      image_slide_1: require('../../assets/images/2_trung.jpg'),
+      image_slide_2: require('../../assets/images/3_trung.jpg'),
+      nick_name: 'Trung Trâu'
     },
     {
       id: 4,
@@ -52,11 +64,15 @@ const state = {
       height: '62',
       item_number: '6',
       position: 'Hậu vệ',
-      image: require('../../assets/images/vidic.jpg')
+      image: require('../../assets/images/avt_hung.jpg'),
+      image_slide: require('../../assets/images/1_hung.jpg'),
+      image_slide_1: require('../../assets/images/2_hung.jpg'),
+      image_slide_2: require('../../assets/images/3_hung.jpg'),
+      nick_name: 'Hùng Xí'
     },
     {
       id: 5,
-      birthday: '1995',
+      birthday: '01/12/1995',
       country: 'Phú Thọ',
       last_name: 'Đinh Thanh',
       first_name: 'Liêm',
@@ -64,7 +80,11 @@ const state = {
       height: '66',
       item_number: '7',
       position: 'Hậu vệ',
-      image: require('../../assets/images/vidic.jpg')
+      image: require('../../assets/images/avt_liem.jpg'),
+      image_slide: require('../../assets/images/1_liem.jpg'),
+      image_slide_1: require('../../assets/images/2_liem.jpg'),
+      image_slide_2: require('../../assets/images/3_liem.jpg'),
+      nick_name: 'Liêm Chó'
     },
     {
       id: 6,
@@ -76,11 +96,15 @@ const state = {
       height: '63',
       item_number: '18',
       position: 'Hậu vệ',
-      image: require('../../assets/images/vidic.jpg')
+      image: require('../../assets/images/avt_nam.jpg'),
+      image_slide: require('../../assets/images/1_nam.jpg'),
+      image_slide_1: require('../../assets/images/2_nam.jpg'),
+      image_slide_2: require('../../assets/images/3_nam.jpg'),
+      nick_name: 'Nam Mu'
     },
     {
       id: 7,
-      birthday: '1995',
+      birthday: '22/2/1995',
       country: 'Thành phố Cao Bằng',
       last_name: 'Khánh',
       first_name: 'Giang',
@@ -88,7 +112,11 @@ const state = {
       height: '55',
       item_number: '20',
       position: 'Hậu vệ',
-      image: require('../../assets/images/vidic.jpg')
+      image: require('../../assets/images/avt_giang.jpg'),
+      image_slide: require('../../assets/images/1_giang.jpg'),
+      image_slide_1: require('../../assets/images/2_giang.jpg'),
+      image_slide_2: require('../../assets/images/3_giang.jpg'),
+      nick_name: 'Giang Chè'
     }
   ],
   birthdayDefenders: '',
@@ -99,7 +127,11 @@ const state = {
   heightDefenders: '',
   itemNumberDefenders: '',
   positionDefenders: '',
-  imageDefenders: ''
+  imageDefenders: '',
+  imageSlideDefenders: '',
+  imageSlide1Defenders: '',
+  imageSlide2Defenders: '',
+  nickNameDefenders: ''
 }
 
 const getters = {
@@ -113,6 +145,10 @@ const getters = {
   itemNumberDefenders: state => state.itemNumberDefenders,
   positionDefenders: state => state.positionDefenders,
   imageDefenders: state => state.imageDefenders,
+  imageSlideDefenders: state => state.imageSlideDefenders,
+  imageSlide1Defenders: state => state.imageSlide1Defenders,
+  imageSlide2Defenders: state => state.imageSlide2Defenders,
+  nickNameDefenders: state => state.nickNameDefenders
 }
 
 const actions = {
@@ -142,6 +178,18 @@ const actions = {
   },
   setImageDefenders ({ commit }, name) {
     commit(types.IMAGE_DEFENDERS, name)
+  },
+  setImageSlideDefenders ({ commit }, name) {
+    commit(types.SET_IMAGE_SLIDE_DEFENDERS, name)
+  },
+  setImageSlide1Defenders ({ commit }, name) {
+    commit(types.SET_IMAGE_SLIDE_1_DEFENDERS, name)
+  },
+  setImageSlide2Defenders ({ commit }, name) {
+    commit(types.SET_IMAGE_SLIDE_2_DEFENDERS, name)
+  },
+  setNickNameDefenders ({ commit }, name) {
+    commit(types.SET_NICK_NAME_DEFENDERS, name)
   },
 }
 
@@ -173,6 +221,18 @@ const mutations = {
   [types.IMAGE_DEFENDERS] (state, name) {
     state.imageDefenders = name
   },
+  [types.SET_IMAGE_SLIDE_DEFENDERS] (state, name) {
+    state.imageSlideDefenders = name
+  },
+  [types.SET_IMAGE_SLIDE_1_DEFENDERS] (state, name) {
+    state.imageSlide1Defenders = name
+  },
+  [types.SET_IMAGE_SLIDE_2_DEFENDERS] (state, name) {
+    state.imageSlide2Defenders = name
+  },
+  [types.SET_NICK_NAME_DEFENDERS] (state, name) {
+    state.nickNameDefenders = name
+  }
 }
 export default {
   state,

@@ -18,13 +18,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="../../assets/images/vidic.jpg" alt="First slide">
+                        <img class="d-block w-100" :src="this.imageSlideForwards" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/images/vidic.jpg" alt="Second slide">
+                        <img class="d-block w-100" :src="this.imageSlide1Forwards" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/images/vidic.jpg" alt="Third slide">
+                        <img class="d-block w-100" :src="this.imageSlide2Forwards" alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -69,7 +69,11 @@
                             </tr>
                             <tr>
                                 <th scope="row">vị trí</th>
-                                <td>{{ positionForwards }}</td>
+                                <td>{{ this.positionForwards }}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">biệt danh</th>
+                                <td>{{ this.nickNameForwards }}</td>
                             </tr>
                             </tbody>
                         </table>
@@ -136,6 +140,26 @@
           return this.$store.getters.imageForwards
         }
       },
+      imageSlideForwards: {
+        get: function () {
+          return this.$store.getters.imageSlideForwards
+        }
+      },
+      imageSlide1Forwards: {
+        get: function () {
+          return this.$store.getters.imageSlide1Forwards
+        }
+      },
+      imageSlide2Forwards: {
+        get: function () {
+          return this.$store.getters.imageSlide2Forwards
+        }
+      },
+      nickNameForwards: {
+        get: function () {
+          return this.$store.getters.nickNameForwards
+        }
+      }
     },
     created: function () {
       for (let i = 0; i < this.dataForwards.length; i++) {
@@ -152,6 +176,10 @@
           let itemNumberForward = dataF.item_number
           let positionForward = dataF.position
           let imageForward = dataF.image
+          let imageSlideForward = dataF.image_slide
+          let imageSlide1Forward = dataF.image_slide_1
+          let imageSlide2Forward = dataF.image_slide_2
+          let nickNameForward = dataF.nick_name
 
           this.$store.dispatch('setBirthdayForwards', birthdayForward)
           this.$store.dispatch('setCountryForwards', countryForward)
@@ -162,6 +190,10 @@
           this.$store.dispatch('setItemNumberForwards', itemNumberForward)
           this.$store.dispatch('setPositionForwards', positionForward)
           this.$store.dispatch('setImageForwards', imageForward)
+          this.$store.dispatch('setImageSlideForwards', imageSlideForward)
+          this.$store.dispatch('setImageSlide1Forwards', imageSlide1Forward)
+          this.$store.dispatch('setImageSlide2Forwards', imageSlide2Forward)
+          this.$store.dispatch('setNickNameForwards', nickNameForward)
         }
       }
     },

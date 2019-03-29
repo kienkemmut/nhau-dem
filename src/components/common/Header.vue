@@ -4,7 +4,8 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">FC</a>
+            <!--<a class="navbar-brand logo-team-home" href="" @click="pushHome()">FC NHẬU ĐÊM</a>-->
+            <router-link class="navbar-brand logo-team-home" to="/"><span class="text-logo-team-home">FC NHẬU ĐÊM</span></router-link>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="nav nav-pills ul-navbar-custom">
                     <li class="nav-item">
@@ -36,6 +37,9 @@
     methods: {
       closeToggle: function () {
         $('.collapse').collapse('hide')
+      },
+      pushHome: function () {
+        this.$router.push({ name : 'TRANG CHỦ'})
       }
     }
   }

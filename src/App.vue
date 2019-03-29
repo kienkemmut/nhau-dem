@@ -3,6 +3,9 @@
     <Header class="nav-sticky"></Header>
     <router-view/>
     <Footer></Footer>
+    <back-to-top>
+      <button type="button" class="btn btn-info btn-to-top"><i class="fa fa-chevron-up"></i></button>
+    </back-to-top>
   </div>
 </template>
 
@@ -17,3 +20,9 @@ export default {
   name: 'App'
 }
 </script>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+  #app {
+    font-family: 'Noto Sans', sans-serif;
+  }
+</style>

@@ -107,6 +107,10 @@
             let itemNumberForward = dataF.item_number
             let positionForward = dataF.position
             let imageForward = dataF.image
+            let imageSlideForward = dataF.image_slide
+            let imageSlide1Forward = dataF.image_slide_1
+            let imageSlide2Forward = dataF.image_slide_2
+            let nickNameForward = dataF.nick_name
 
             this.$store.dispatch('setBirthdayForwards', birthdayForward)
             this.$store.dispatch('setCountryForwards', countryForward)
@@ -117,6 +121,10 @@
             this.$store.dispatch('setItemNumberForwards', itemNumberForward)
             this.$store.dispatch('setPositionForwards', positionForward)
             this.$store.dispatch('setImageForwards', imageForward)
+            this.$store.dispatch('setImageSlideForwards', imageSlideForward)
+            this.$store.dispatch('setImageSlide1Forwards', imageSlide1Forward)
+            this.$store.dispatch('setImageSlide2Forwards', imageSlide2Forward)
+            this.$store.dispatch('setNickNameForwards', nickNameForward)
 
             this.$router.push({ name: 'PlayerForwards', params: {id: param.id} })
           }
@@ -137,6 +145,10 @@
             let itemNumberGoalKeeper = dataG.item_number
             let positionGoalKeeper = dataG.position
             let imageGoalKeeper = dataG.image
+            let imageSlideGoalKeeper = dataG.image_slide
+            let imageSlide1GoalKeeper = dataG.image_slide_1
+            let imageSlide2GoalKeeper = dataG.image_slide_2
+            let nickNameGoalKeeper = dataG.nick_name
 
             this.$store.dispatch('setBirthdayGoalKeepers', birthdayGoalKeeper)
             this.$store.dispatch('setCountryGoalKeepers', countryGoalKeeper)
@@ -147,6 +159,10 @@
             this.$store.dispatch('setItemNumberGoalKeepers', itemNumberGoalKeeper)
             this.$store.dispatch('setPositionGoalKeepers', positionGoalKeeper)
             this.$store.dispatch('setImageGoalKeepers', imageGoalKeeper)
+            this.$store.dispatch('setImageSlideGoalKeepers', imageSlideGoalKeeper)
+            this.$store.dispatch('setImageSlide1GoalKeepers', imageSlide1GoalKeeper)
+            this.$store.dispatch('setImageSlide2GoalKeepers', imageSlide2GoalKeeper)
+            this.$store.dispatch('setNickNameGoalKeepers', nickNameGoalKeeper)
 
             this.$router.push({ name: 'PlayerGoalkeepers', params: {id: param.id} })
           }
@@ -167,6 +183,10 @@
             let itemNumberMidfielder = dataM.item_number
             let positionMidfielder = dataM.position
             let imageMidfielder = dataM.image
+            let imageSlideMidfielder = dataM.image_slide
+            let imageSlide1Midfielder = dataM.image_slide_1
+            let imageSlide2Midfielder = dataM.image_slide_2
+            let nickNameMidfielder = dataM.nick_name
 
             this.$store.dispatch('setBirthdayMidfielders', birthdayMidfielder)
             this.$store.dispatch('setCountryMidfielders', countryMidfielder)
@@ -177,6 +197,10 @@
             this.$store.dispatch('setItemNumberMidfielders', itemNumberMidfielder)
             this.$store.dispatch('setPositionMidfielders', positionMidfielder)
             this.$store.dispatch('setImageMidfielders', imageMidfielder)
+            this.$store.dispatch('setImageSlideMidfielders', imageSlideMidfielder)
+            this.$store.dispatch('setImageSlide1Midfielders', imageSlide1Midfielder)
+            this.$store.dispatch('setImageSlide2Midfielders', imageSlide2Midfielder)
+            this.$store.dispatch('setNickNameMidfielders', nickNameMidfielder)
 
             this.$router.push({ name: 'PlayerMidfielders', params: {id: param.id} })
           }
@@ -197,6 +221,10 @@
             let itemNumberDefender = dataD.item_number
             let positionDefender = dataD.position
             let imageDefender = dataD.image
+            let imageSlideDefender = dataD.image_slide
+            let imageSlide1Defender = dataD.image_slide_1
+            let imageSlide2Defender = dataD.image_slide_2
+            let nickNameDefender = dataD.nick_name
 
             this.$store.dispatch('setBirthdayDefenders', birthdayDefender)
             this.$store.dispatch('setCountryDefenders', countryDefender)
@@ -207,6 +235,10 @@
             this.$store.dispatch('setItemNumberDefenders', itemNumberDefender)
             this.$store.dispatch('setPositionDefenders', positionDefender)
             this.$store.dispatch('setImageDefenders', imageDefender)
+            this.$store.dispatch('setImageSlideDefenders', imageSlideDefender)
+            this.$store.dispatch('setImageSlide1Defenders', imageSlide1Defender)
+            this.$store.dispatch('setImageSlide2Defenders', imageSlide2Defender)
+            this.$store.dispatch('setNickNameDefenders', nickNameDefender)
 
             this.$router.push({ name: 'PlayerDefenders', params: {id: param.id} })
           }

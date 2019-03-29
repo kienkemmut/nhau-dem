@@ -7,6 +7,15 @@ $color-hover: #7F7300;
   -moz-box-shadow: 0px 4px 5px rgba(68,68,68,0.6);
   -webkit-box-shadow: 0px 4px 5px rgba(68,68,68,0.6);
   box-shadow: 0px 4px 5px rgba(68,68,68,0.6);
+  .logo-team-home {
+    border-bottom: black !important;
+    .text-logo-team-home {
+      color: #FFE600 !important;
+    }
+  }
+  .logo-team-home:hover {
+    color: #FFE600 !important;
+  }
   .navbar-brand {
     color: #FFE600 !important;
     font-weight: bold;

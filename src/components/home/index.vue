@@ -1,26 +1,22 @@
 <template>
     <div>
-
         <div class="screen-home">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <!--<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>-->
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="../../assets/images/home/nhau-dem-home-1.jpg" alt="First slide">
+                        <img class="d-block w-100" :src="require('../../assets/images/nhau-dem-home-1.jpg')" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/images/home/nhau-dem-home.jpg" alt="Second slide">
+                        <img class="d-block w-100" src="../../assets/images/home-slide.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/images/home/nhau-dem-home-2.jpg" alt="Third slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/images/home/nhau-dem-home-5.jpg" alt="Third slide">
+                        <img class="d-block w-100" src="../../assets/images/nhau-dem-home-5.jpg" alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -34,7 +30,7 @@
             </div>
             <div class="row div-match">
                 <div class="col-lg-4 last-match">
-                    <h4>TRẬN TRƯỚC</h4>
+                    <h4 style="font-weight: bold">TRẬN TRƯỚC</h4>
                     <div class="row mb-2">
                         <div class="col-lg-5">FC Nhậu Đêm</div>
                         <div class="col-lg-2">6 - 4</div>
@@ -44,7 +40,7 @@
                     <p>22/03/2019 20:30</p>
                 </div>
                 <div class="col-lg-8 next-match">
-                    <h4>TRẬN TIẾP THEO</h4>
+                    <h4 style="font-weight: bold">TRẬN TIẾP THEO</h4>
                     <div class="row mb-2">
                         <div class="col-lg-5">FC Nhậu Đêm</div>
                         <div class="col-lg-2">- : -</div>
@@ -64,14 +60,15 @@
                     </div>
                 </div>
             </div>
-            <div class="images-team-home">
-                <div class="row">
-                    <div class="col-lg-6 img-team-padding">
-                        <div class="img-team-1"></div>
-                    </div>
-                    <div class="col-lg-6 img-team-padding">
-                        <div class="img-team-2"></div>
-                    </div>
+            <div class="wrapper">
+                <div class="title-image-scroll">
+                    <span>Ảnh</span>
+                </div>
+                <div class="scrolls">
+                    <img src="../../assets/images/home.jpg"/>
+                    <img src="../../assets/images/home-1.jpg"/>
+                    <img src="../../assets/images/home-2.jpg"/>
+                    <img src="../../assets/images/home-3.jpg"/>
                 </div>
             </div>
             <div class="div-history-match">

@@ -16,10 +16,27 @@ const state = {
       height: '68',
       item_number: '1',
       position: 'Thủ môn',
-      image: require('../../assets/images/degea.jpg'),
-      image_s: require('../../assets/images/degea.jpg'),
-      image_sl: require('../../assets/images/degea.jpg'),
-      image_sli: require('../../assets/images/degea.jpg')
+      image: require('../../assets/images/avt_duy.jpg'),
+      image_slide: require('../../assets/images/1_duy.jpg'),
+      image_slide_1: require('../../assets/images/2_duy.jpg'),
+      image_slide_2: require('../../assets/images/3_duy.jpg'),
+      nick_name: 'Cu Duy'
+    },
+    {
+      id: 2,
+      birthday: '20/11/1995',
+      country: 'Thị trấn Thất Khê',
+      last_name: 'Nguyễn Minh',
+      first_name: 'Trường',
+      size: '170',
+      height: '56',
+      item_number: '69',
+      position: 'Thủ môn',
+      image: require('../../assets/images/avt_truong.jpg'),
+      image_slide: require('../../assets/images/1_truong.jpg'),
+      image_slide_1: require('../../assets/images/2_truong.jpg'),
+      image_slide_2: require('../../assets/images/3_truong.jpg'),
+      nick_name: 'Tắc Kè'
     }
   ],
   birthdayGoalKeepers: '',
@@ -31,9 +48,10 @@ const state = {
   itemNumberGoalKeepers: '',
   positionGoalKeepers: '',
   imageGoalKeepers: '',
-  image_s: '',
-  image_sl: '',
-  image_sli: '',
+  imageSlideGoalKeepers: '',
+  imageSlide1GoalKeepers: '',
+  imageSlide2GoalKeepers: '',
+  nickNameGoalKeepers: ''
 }
 
 const getters = {
@@ -47,9 +65,10 @@ const getters = {
   itemNumberGoalKeepers: state => state.itemNumberGoalKeepers,
   positionGoalKeepers: state => state.positionGoalKeepers,
   imageGoalKeepers: state => state.imageGoalKeepers,
-  image_s: state => state.image_s,
-  image_sl: state => state.image_sl,
-  image_sli: state => state.image_sli,
+  imageSlideGoalKeepers: state => state.imageSlideGoalKeepers,
+  imageSlide1GoalKeepers: state => state.imageSlide1GoalKeepers,
+  imageSlide2GoalKeepers: state => state.imageSlide2GoalKeepers,
+  nickNameGoalKeepers: state => state.nickNameGoalKeepers,
 }
 
 const actions = {
@@ -79,6 +98,18 @@ const actions = {
   },
   setImageGoalKeepers ({ commit }, name) {
     commit(types.IMAGE_GOALKEEPERS, name)
+  },
+  setImageSlideGoalKeepers ({ commit }, name) {
+    commit(types.SET_IMAGE_IMAGE_SLIDE_GOALKEEPERS, name)
+  },
+  setImageSlide1GoalKeepers ({ commit }, name) {
+    commit(types.SET_IMAGE_IMAGE_SLIDE_1_GOALKEEPERS, name)
+  },
+  setImageSlide2GoalKeepers ({ commit }, name) {
+    commit(types.SET_IMAGE_IMAGE_SLIDE_2_GOALKEEPERS, name)
+  },
+  setNickNameGoalKeepers ({ commit }, name) {
+    commit(types.SET_NICK_NAME_GOALKEEPERS, name)
   },
 }
 
@@ -110,6 +141,18 @@ const mutations = {
   [types.IMAGE_GOALKEEPERS] (state, name) {
     state.imageGoalKeepers = name
   },
+  [types.SET_IMAGE_IMAGE_SLIDE_GOALKEEPERS] (state, name) {
+    state.imageSlideGoalKeepers = name
+  },
+  [types.SET_IMAGE_IMAGE_SLIDE_1_GOALKEEPERS] (state, name) {
+    state.imageSlide1GoalKeepers = name
+  },
+  [types.SET_IMAGE_IMAGE_SLIDE_2_GOALKEEPERS] (state, name) {
+    state.imageSlide2GoalKeepers = name
+  },
+  [types.SET_NICK_NAME_GOALKEEPERS] (state, name) {
+    state.nickNameGoalKeepers = name
+  }
 }
 
 export default {
